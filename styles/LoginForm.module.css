@@ -1,0 +1,79 @@
+.container {
+  background-color: #ffe4e1; /* Soft pink */
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+.title {
+  text-align: center;
+  color: #ff69b4; /* Hot pink */
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.label {
+  font-size: 1rem;
+  color: #d87093; /* Pale violet red */
+}
+
+.input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ffb6c1; /* Light pink */
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #ff69b4; /* Hot pink */
+}
+
+.button {
+  background-color: #ff69b4; /* Hot pink */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ff1493; /* Deep pink */
+}
+
+.button:active {
+  background-color: #c71585; /* Medium violet red */
+}
+
+.button:focus {
+  outline: 3px solid #ffb6c1; /* Light pink */
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
